@@ -1,26 +1,23 @@
 {
-  "name": "plugin-oidc-example",
+  "name": "plugin-better-auth-example",
   "version": "1.0.0",
-  "description": "An example GraphQL Yoga project to get you started with plugin-oidc.",
+  "description": "An example GraphQL Yoga project to get you started with plugin-better-auth.",
   "author": "Nexirift",
   "license": "MIT",
-  "main": "server.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "dev": "bun --watch src/server.ts",
-    "start": "bun src/server.ts"
+    "dev": "bun run --hot src/index.ts",
+    "migrate": "bunx --bun @better-auth/cli migrate"
   },
-  "keywords": [],
   "dependencies": {
-    "@nexirift/plugin-oidc": "^1.0.3",
-    "@pothos/core": "^4.2.0",
-    "@types/node": "^22.5.4",
-    "dotenv": "^16.4.5",
-    "graphql": "^16.9.0",
-    "graphql-yoga": "^5.7.0",
-    "redis": "^4.7.0"
+    "@pothos/core": "^4.3.0",
+    "better-auth": "^1.1.18",
+    "graphql": "^16.10.0",
+    "graphql-yoga": "^5.11.0",
+    "hono": "^4.7.1",
+    "kysely-bun-sqlite": "^0.3.2"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.9",
-    "typescript": "^5.6.2"
+    "@types/bun": "latest"
   }
 }
