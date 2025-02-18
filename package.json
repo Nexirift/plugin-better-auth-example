@@ -10,6 +10,7 @@
     "migrate": "bunx --bun @better-auth/cli migrate"
   },
   "dependencies": {
+    "@nexirift/plugin-better-auth": "^1.0.0",
     "@pothos/core": "^4.3.0",
     "better-auth": "^1.1.18",
     "graphql": "^16.10.0",
